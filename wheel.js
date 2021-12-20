@@ -1,5 +1,9 @@
+const { writeToFile } = require("./write_to_file");
+
 const wheelBoards = getWheelBoards();
-console.log(wheelBoards);
+
+const fileName = "wheel.txt";
+writeToFile(fileName, wheelBoards.join("\n"));
 
 function getWheelBoards() {
   const combos = [];

@@ -1,5 +1,9 @@
+const { writeToFile } = require("./write_to_file");
+
 const monotoneBoards = getMonotoneBoards();
-console.log(monotoneBoards);
+
+const fileName = "monotone.txt";
+writeToFile(fileName, monotoneBoards.join("\n"));
 
 function getMonotoneBoards() {
   const cards = getCards();
