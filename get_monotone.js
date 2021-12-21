@@ -16,14 +16,7 @@ function getMonotoneBoards() {
       const remainingCards2 = [...remainingCards1].splice(index2 + 1);
 
       remainingCards2.forEach(card3 => {
-        const spades = `${card}s${card2}s${card3}s`;
-        const clubs = `${card}c${card2}c${card3}c`;
-        const diamonds = `${card}d${card2}d${card3}d`;
-        const hearts = `${card}h${card2}h${card3}h`;
-        combos.push(spades);
-        combos.push(clubs);
-        combos.push(diamonds);
-        combos.push(hearts);
+        combos.push(`${card}${card2}${card3}sss`);
       });
     });
   });
