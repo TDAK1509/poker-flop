@@ -1,4 +1,4 @@
-const { writeToFile } = require("./write_to_file");
+const { writeToFile } = require("./utils");
 
 const wheelBoards = getWheelBoards();
 
