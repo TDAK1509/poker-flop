@@ -1,4 +1,4 @@
-const { writeToFile } = require("./utils");
+const { writeToFile, filterIsNotDuplicatedValue } = require("./utils");
 
 const wheelBoards = getWheelBoards();
 
@@ -32,8 +32,4 @@ function getWheelBoards() {
 
 function getCards() {
   return ["A", "5", "4", "3", "2"];
-}
-
-function filterIsNotDuplicatedValue(remainingCard, selectedCard) {
-  return remainingCard.charAt(0) !== selectedCard.charAt(0);
 }

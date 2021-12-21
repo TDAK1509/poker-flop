@@ -7,6 +7,11 @@ function writeToFile(fileName, content) {
   });
 }
 
+function filterIsNotDuplicatedValue(remainingCard, selectedCard) {
+  return remainingCard.charAt(0) !== selectedCard.charAt(0);
+}
+
 module.exports = {
   writeToFile,
+  filterIsNotDuplicatedValue,
 };
