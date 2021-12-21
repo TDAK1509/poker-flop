@@ -2,7 +2,7 @@ const { writeToFile } = require("./write_to_file");
 
 const monotoneBoards = getMonotoneBoards();
 
-const fileName = "monotone.txt";
+const fileName = "dist/monotone.txt";
 writeToFile(fileName, monotoneBoards.join("\n"));
 
 function getMonotoneBoards() {

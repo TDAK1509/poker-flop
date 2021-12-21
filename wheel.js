@@ -2,7 +2,7 @@ const { writeToFile } = require("./write_to_file");
 
 const wheelBoards = getWheelBoards();
 
-const fileName = "wheel.txt";
+const fileName = "dist/wheel.txt";
 writeToFile(fileName, wheelBoards.join("\n"));
 
 function getWheelBoards() {
